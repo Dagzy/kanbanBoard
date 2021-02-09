@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" media="screen and (min-width:900px)" href="./css/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width:899px)" href="./css/mobile.css">
+    <!-- <link rel="stylesheet" href="./css/alternate.css"> -->
+    <script defer src="main.js"></script>
+</head>
+
+<body class="container">
+    
+    <ol>
+        <li class="card">
+            <div>
+                <h3 class="card-header">Add A Card</h3>
+                <label for="heading">Heading</label>
+                <br>
+                <input type="text" name="heading" id="new-card-heading">
+                <br>
+                <label for="content">Task</label>
+                <br>
+                <input type="text" name="content" id="new-card-body">
+                <br>
+                <br>
+                <select name="list" id="new-card-list">
+                    <option value="to-do">To Do</option>
+                    <option value="doing">Doing</option>
+                    <option value="done">Done</option>
+                </select>
+                <br>
+                <br>
+                <button onclick="addCard()">Add Card!</button>
+            </div>
+        </li>
+    </ol>
+    <ol>
+        <li id="to-do">
+            <h2>To Do</h2>
+            <ul id="to-do-list"></ul>
+        </li>
+        <li id="doing">
+            <h2>Doing</h2>
+            <ul id="doing-list"></ul>
+        </li>
+        <li id="done">
+            <h2>Done</h2>
+            <ul id="done-list"></ul>
+        </li>
+        <!-- <li id="archived">
+            <h2>Archived</h2>
+            <ul id="archived-list"></ul>
+        </li> -->
+    </ol>
+
+</body>
+
+</html>
