@@ -19,7 +19,6 @@ function drawCards(cards) {
     Array.from(document.getElementsByTagName("ul")).forEach(list => {list.innerHTML = "";})
     cards.forEach((task, id) => {
         const card = {...task, id: id };
-        console.log(card);
         const list = document.getElementById(`${card.category}-list`);
         const item = makeCardElement(card);
         item.appendChild(makeSelectElement(card));
